@@ -29,10 +29,10 @@ def Submit():
         except:
             return render_template('Submit.html', error=True)
 
-@app.route('/view/')
-def view():
+@app.route('/View/')
+def View():
     message=random_messages(6)
-    return render_template('view.html',messages=message)
+    return render_template('View.html',messages=message)
 
 
 def get_message_db():
@@ -65,7 +65,7 @@ def random_messages(n):
     cursor = TB.cursor()
 #    cmd3 = """SELECT COUNT(*) FROM messages"""
 #    cursor.execute(cmd3)
-    cmd4 = f"""SELECT message FROM messages order by RANDOM() LIMIT {n}"""
+    cmd4 = f"""SELECT handle,message FROM messages order by RANDOM() LIMIT {n}"""
     cursor.execute(cmd4)
     result = cursor.fetchall()
     return result 
