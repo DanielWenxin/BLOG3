@@ -10,10 +10,28 @@ body {
 }
 
 h1 {
-    color: rgb(0, 0, 0);
-    font-family: sans-serif;
+    color: rgb(51, 153, 255);
+    font-family: cursive;
     margin: 1rem 0;
     text-align: center;
+    font-size: 50px
+
+}
+
+h2,p {
+    color: rgb(204, 0, 0);
+    font-family: cursive;
+    margin: 1rem 0;
+    text-align: left;
+
+}
+
+i {
+    color: rgb(102, 0, 204);
+    font-family: "Gill Sans", sans-serif;
+    margin: 1rem 0;
+    font-style: oblique;
+
 }
 
 a {
