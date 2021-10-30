@@ -1,6 +1,6 @@
 html {
     font-family: sans-serif;
-    background: AntiqueWhite;
+    background: LightGray;
     padding: 1rem;
 }
 
@@ -16,6 +16,23 @@ h1 {
     text-align: center;
     font-size: 50px
 
+}
+
+li {
+    color: rgb(51, 153, 255);
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+label {
+    color: rgb(51, 153, 255);
+    font-family: cursive;
+    cursor: default;
+}
+
+button{
+    color: rgb(51, 153, 255);
+    font-family: cursive
 }
 
 h2,p {
@@ -45,7 +62,7 @@ hr {
 }
 
 nav {
-    background: AntiqueWhite;
+    background: LightGray;
     padding: 0 0.5rem;
     border-radius: 25px;
 }
