@@ -63,8 +63,6 @@ def insert_message(request):
 def random_messages(n):
     TB = get_message_db()
     cursor = TB.cursor()
-#    cmd3 = """SELECT COUNT(*) FROM messages"""
-#    cursor.execute(cmd3)
     cmd4 = f"""SELECT handle,message FROM messages order by RANDOM() LIMIT {n}"""
     cursor.execute(cmd4)
     result = cursor.fetchall()
